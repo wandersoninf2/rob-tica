@@ -50,4 +50,3 @@ void loop()
   digitalWrite (8, HIGH); // liga semáfaro verme s1
   
 }
-  
