@@ -2,13 +2,13 @@
 //
 void setup()
 {
-  pinMode(13, OUTPUT); //verde s1
-  pinMode(12, OUTPUT); // amarelo s1
-  pinMode(11, OUTPUT); // vermelho s1
+  pinMode(13, OUTPUT); //verde s2
+  pinMode(12, OUTPUT); // amarelo s2
+  pinMode(11, OUTPUT); // vermelho s2
   
-  pinMode(10, OUTPUT); // verde s2
-  pinMode(9, OUTPUT);  // amarelo s2
-  pinMode(8, OUTPUT);  // vermelho s2
+  pinMode(10, OUTPUT); // verde s1
+  pinMode(9, OUTPUT);  // amarelo s1
+  pinMode(8, OUTPUT);  // vermelho s1
   
   
 }
@@ -17,44 +17,37 @@ void loop()
 {
   
 
-  digitalWrite (8, HIGH);
-  digitalWrite(13, HIGH); 
+  digitalWrite (8, HIGH); // liga semáfaro verme s1
+  digitalWrite(13, HIGH); // liga semáfaro verde s2
   delay(6000);
   
-  digitalWrite(13, LOW);
+  digitalWrite(13, LOW); //desliga semáfaro verde s2
   
   
-  digitalWrite (12, HIGH);
+  digitalWrite (12, HIGH); // liga semáfaro amare s2
   delay (6000);
   
-  digitalWrite (12, LOW);
+  digitalWrite (12, LOW);// desliga semáfaro amare s2
   
   
-  digitalWrite (8, LOW);
+  digitalWrite (8, LOW); // desliga semáfaro verme s1
   
-  digitalWrite(11, HIGH);
+  digitalWrite(11, HIGH); // liga semáfaro verme s2
  
-  digitalWrite(10, HIGH); 
+  digitalWrite(10, HIGH); // liga semáfaro verde s1
   delay (6000);
   
-  digitalWrite (10, LOW);
+  digitalWrite (10, LOW); // desliga semáfaro verde s1
   
-  digitalWrite (11, HIGH);
-  
-  digitalWrite (10, LOW);
-  
-  digitalWrite (9, HIGH);
-  digitalWrite (9, HIGH);
+  digitalWrite (9, HIGH); // liga semáfaro amare s1
   delay (6000);
   
-  digitalWrite (9, LOW);
+  digitalWrite (9, LOW); // desliga semáfaro amare s1
   
-  digitalWrite (11, LOW);
-  
-  
-  digitalWrite (8, HIGH);
+  digitalWrite (11, LOW); // desliga semáfaro verme s2
   
   
+  digitalWrite (8, HIGH); // liga semáfaro verme s1
   
 }
   
